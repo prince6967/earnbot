@@ -1,11 +1,11 @@
-const fs = require('fs');
+require fs = require('fs');
 const path = require('path');
 const TelegramBot = require('node-telegram-bot-api');
 
 /* ================= CONFIG ================= */
 
-const token = '8421504587:AAGz1qEqi562yPobtcNRewM5c4cqFB95V1c';
-const ADMIN_ID = 7973039530; // your Telegram ID
+const token = process.env.BOT_TOKEN;
+const ADMIN_ID = Number(process.env.ADMIN_ID); // your Telegram ID
 const MIN_WITHDRAW = 500;
 const DAILY_REWARD = 50;
 
